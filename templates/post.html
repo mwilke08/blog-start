@@ -10,17 +10,19 @@
 <div class="wrapper">
     <div class="top">
         <div class="title"><h1>My Blog</h1></div>
-           </div>
-        <div class="content">
-            <div class="card">
-                <h2>{{ cur_post["title"] }}</h2>
-                <p>{{ cur_post["body"] }}</p>
-            </div>
-
+    </div>
+    <div class="content">
+        <div class="card">
+            <h2>{{ cur_post["title"] }}</h2>
+            <p>{{ cur_post["body"] }}</p>
+        </div>
+    </div>
+    <div class="link-wrapper">
+        <a href="{{ url_for('home') }}">Back to All Blog Posts</a>
     </div>
 </div>
 </body>
 <footer>
-    <p>Made with ♥️ in London.</p>
+    <p>Programmed by Matt Wilke {{ currentYear }}</p>
 </footer>
 </html>
